@@ -1039,4 +1039,20 @@ mask-image: linear-gradient(to top, transparent 40%, #079097 80%) !important;
 
 }
 
+.flowers{
+    animation:cinematicZoom 12s ease forwards;
+}
+
+@keyframes cinematicZoom{
+
+from{
+transform:scale(1);
+}
+
+to{
+transform:scale(1.04);
+}
+
+}
+
 
