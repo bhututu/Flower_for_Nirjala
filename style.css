@@ -984,3 +984,29 @@ mask-image: linear-gradient(to top, transparent 40%, #079097 80%) !important;
 .not-loaded * {
   animation-play-state: paused !important;
 }
+
+#message {
+    position: fixed;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+    opacity: 0;
+    transition: opacity 2s ease;
+    z-index: 9999;
+    font-family: 'Poppins', sans-serif;
+}
+
+#message.show {
+    opacity: 1;
+}
+
+#message h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+#message p {
+    font-size: 1.2rem;
+}
