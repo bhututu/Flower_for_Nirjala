@@ -985,28 +985,58 @@ mask-image: linear-gradient(to top, transparent 40%, #079097 80%) !important;
   animation-play-state: paused !important;
 }
 
-#message {
+#message{
     position: fixed;
-    top: 15%;
+    top: 18%;
     left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-    color: white;
-    opacity: 0;
-    transition: opacity 2s ease;
-    z-index: 9999;
-    font-family: 'Poppins', sans-serif;
+    transform: translate(-50%,40px) scale(.95);
+    opacity:0;
+    text-align:center;
+    color:white;
+    z-index:9999;
+    transition:all 2s ease;
+    font-family:'Cormorant Garamond', serif;
+    text-shadow:
+        0 0 10px rgba(255,255,255,.5),
+        0 0 20px rgba(255,182,193,.5),
+        0 0 40px rgba(255,105,180,.3);
 }
 
-#message.show {
-    opacity: 1;
+#message.show{
+    opacity:1;
+    transform:translate(-50%,0) scale(1);
 }
 
-#message h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
+#message h1{
+    font-size:3rem;
+    margin-bottom:25px;
 }
 
-#message p {
-    font-size: 1.2rem;
+#message p{
+    font-size:1.4rem;
+    margin:12px 0;
 }
+
+#signature{
+    margin-top:35px;
+    font-style:italic;
+    opacity:.8;
+}
+
+@media(max-width:768px){
+
+#message{
+    width:90%;
+}
+
+#message h1{
+    font-size:2rem;
+}
+
+#message p{
+    font-size:1rem;
+}
+
+}
+
+
